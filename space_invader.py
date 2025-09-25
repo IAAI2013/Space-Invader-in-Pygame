@@ -1,6 +1,12 @@
 import math
 import pygame 
 import random
+from pygame import mixer
+
+# Add background sound
+pygame.mixer.init()
+pygame.mixer.music.load('space-invaders-classic-arcade-game-116826.mp3')
+pygame.mixer.music.play(-1)
 
 # Game Constants
 SCREEN_WIDTH = 800
